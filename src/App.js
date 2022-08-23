@@ -13,7 +13,7 @@ class App extends React.Component {
     }
   }
 
-  // *** CITY DATA DEMO HANDLERS New ***
+  // *** CITY DATA DEMO HANDLERS ***
 
   handleInput = (e) => {
     e.preventDefault();
