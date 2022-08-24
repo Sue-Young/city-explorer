@@ -54,6 +54,7 @@ class App extends React.Component {
             onChange={this.handleChange}
             placeholder='Location...'
             />
+            <Button type="submit" variant="primary">Explore!</Button>{' '}
             <Button type="submit" />
             </InputGroup>
               {this.state.tError}
