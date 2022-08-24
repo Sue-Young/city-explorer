@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup'
 import React from 'react';
 import axios from 'axios';
-//import CityInfo from './CityInfo.js'
+import CityInfo from './CityInfo.js'
 
 class App extends React.Component {
   
@@ -15,7 +15,7 @@ class App extends React.Component {
     super( props )
     this.state = {
       sQuery: '',
-      sResults: null,
+      sResults: false,
       mURL: '',
       tError: false,
     }
@@ -53,8 +53,8 @@ class App extends React.Component {
             onChange={this.handleChange}
             placeholder='Location...'
             />
-            {/* <Button type="submit" variant="primary">Explore!</Button>{' '} */}
-            <Button type="submit" />
+            <Button type="submit" variant="primary">Explore!</Button>{' '}
+            {/* <Button type="submit" /> */}
             </InputGroup>
               {this.state.tError}
             </Form>
@@ -62,13 +62,13 @@ class App extends React.Component {
         <main>
           {
             <div>
-            <h1>Name: </h1>
-
+            {
             !this.state.tError && this.state.sResults &&
-            <h1>Name: {this.state.sResults.display_name}</h1>
-
-             {/* <CityInfo cityInfo={this.state.sResults}>        
-            </CityInfo> */}
+             <CityInfo cityInfo={this.state.sResults}>        
+            </CityInfo> 
+            // <h1>Name: {this.state.sResults.display_name}</h1>
+            }
+            
             </div>
 
           }
