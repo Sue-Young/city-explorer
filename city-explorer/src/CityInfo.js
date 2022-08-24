@@ -1,5 +1,4 @@
 import React from 'react';
-import Accordion from 'react-bootstrap/Accordion';
 
 class CityInfo extends React.Component {
   constructor(props) {
@@ -19,17 +18,9 @@ class CityInfo extends React.Component {
       {
         this.props.cityInfo && 
         <div className="LocationData">
-          <h1>Name: {this.props.cityInfo?.display_name}</h1>
-        {/* <Accordion flush activeKey={this.state.theKey} >
-            <Accordion.Item theKey={0}>
-              <Accordion.Header onClick={this.handleClick} >
-              {this.props.cityInfo?.display_name}
-              </Accordion.Header>
-              <Accordion.Body>
-              {this.props.cityInfo?.lat}, {this.props.cityInfo?.lon}
-              </Accordion.Body>
-         </Accordion.Item>
-        </Accordion> */}
+          <h1>Name: {this.props.cityInfo.display_name}</h1>
+          <h1>Lat: {this.props.cityInfo.lat}</h1>
+          <h1>Lon: {this.props.cityInfo.lon}</h1>
         </div>
       }
       </>
