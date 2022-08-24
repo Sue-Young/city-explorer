@@ -11,21 +11,27 @@ https://docs.google.com/drawings/d/1U0JtkqoJiJrxd2Lx-PPDbJmmXiIfqaVUl8qAngqOFCA/
 **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
+This app allows a User to explore a city by entering a city name in the search box. It returns the Lat, Lon of the city.  
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+Things to run to set up the app
+npm i axios
+npm install react-bootstrap
+npm start
+
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+## Here is the link to the client/server image put together with Brian Sward
+
+https://docs.google.com/drawings/d/1U0JtkqoJiJrxd2Lx-PPDbJmmXiIfqaVUl8qAngqOFCA/edit
+ -->
 
 ## Change Log
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+08-0=24-2022 9:00am - Application now has a functioning get/view lat lon from a city form input box and using the axios API -->
 
 ## Credit and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+Cameron Walden (how to npm include axios and bootstrap), Audry Patterson (formation of the LociationIQ get API call).
 
 
 Time Estimates
@@ -35,8 +41,8 @@ Name of feature: City Explorer
 
 Estimate of time needed to complete: 2 days
 
-Start time: 1:00 pm MST
+Start time: 1:00 pm MST Tuesday
 
-Finish time: _____
+Finish time: 9:00 am MST Wednesday
 
-Actual time needed to complete: _____
+Actual time needed to complete: Still not complete. Image not rendering and Netlify throwing 404. 

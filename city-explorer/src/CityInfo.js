@@ -18,9 +18,9 @@ class CityInfo extends React.Component {
       {
         this.props.cityInfo && 
         <div className="LocationData">
-          <h1>Name: {this.props.cityInfo.display_name}</h1>
-          <h1>Lat: {this.props.cityInfo.lat}</h1>
-          <h1>Lon: {this.props.cityInfo.lon}</h1>
+          <h1>{this.props.cityInfo.display_name.split(',').join('---')}</h1>
+          <h2>Lat: {this.props.cityInfo.lat}</h2>
+          <h2>Lon: {this.props.cityInfo.lon}</h2>
         </div>
       }
       </>
