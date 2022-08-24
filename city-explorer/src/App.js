@@ -1,13 +1,13 @@
-import logo from './logo.svg';
+//mport logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Image from 'react-bootstrap/Image';
+//import Image from 'react-bootstrap/Image';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup'
 import React from 'react';
 import axios from 'axios';
-import CityInfo from './CityInfo.js'
+//import CityInfo from './CityInfo.js'
 
 class App extends React.Component {
   
@@ -17,7 +17,7 @@ class App extends React.Component {
       sQuery: '',
       sResults: null,
       mURL: '',
-      tError: null,
+      tError: false,
     }
   }
 
@@ -25,7 +25,6 @@ class App extends React.Component {
     this.setState ({
       sQuery: event.target.value,
     });
-    console.log( 'location: ' + this.state.sQuery);
   };
 
   handleSearch = async (event) => {
@@ -54,13 +53,26 @@ class App extends React.Component {
             onChange={this.handleChange}
             placeholder='Location...'
             />
-            <Button type="submit" variant="primary">Explore!</Button>{' '}
+            {/* <Button type="submit" variant="primary">Explore!</Button>{' '} */}
             <Button type="submit" />
             </InputGroup>
               {this.state.tError}
-
             </Form>
         </header>
+        <main>
+          {
+            <div>
+            <h1>Name: </h1>
+
+            !this.state.tError && this.state.sResults &&
+            <h1>Name: {this.state.sResults.display_name}</h1>
+
+             {/* <CityInfo cityInfo={this.state.sResults}>        
+            </CityInfo> */}
+            </div>
+
+          }
+        </main>
       </div>
     
   )}

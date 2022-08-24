@@ -18,17 +18,18 @@ class CityInfo extends React.Component {
       <>
       {
         this.props.cityInfo && 
-        <div className="CityInfo">
-        {/* {   <Accordion flush activeKey={this.state.theKey} className="CityInfo"/>
+        <div className="LocationData">
+          <h1>Name: {this.props.cityInfo?.display_name}</h1>
+        {/* <Accordion flush activeKey={this.state.theKey} >
             <Accordion.Item theKey={0}>
-              <Accordion.Header onClick={this.handleClick} className="CityInfo"
+              <Accordion.Header onClick={this.handleClick} >
               {this.props.cityInfo?.display_name}
-              </Accordian.Header>  
-              <Accordian.Body>  
-               {this.props.cityInfo?.lat}, {this.props.cityInfo?.lon}
-              </Accordian.Body>  
-            </Accordian.Item>
-          </Accordian>             } */}
+              </Accordion.Header>
+              <Accordion.Body>
+              {this.props.cityInfo?.lat}, {this.props.cityInfo?.lon}
+              </Accordion.Body>
+         </Accordion.Item>
+        </Accordion> */}
         </div>
       }
       </>
