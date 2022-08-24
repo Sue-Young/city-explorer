@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Image from 'react-bootstrap/Image';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -30,7 +31,7 @@ class App extends React.Component {
   handleSearch = async (event) => {
     event.preventDefault()
     try {
-      const response = await axios.get(URL);
+      const response = await axios.get(`https://us1.locationiq.com/v1/search?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&q=${this.state.sQuery}&format=json`) ;
       this.setState( {
         sResults: response.data[0],
         tError: null,
@@ -41,6 +42,7 @@ class App extends React.Component {
   };
 
   render() {
+    console.log(this.state.sResults);
     return (
    
       <div className="App">
