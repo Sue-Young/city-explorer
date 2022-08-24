@@ -41,7 +41,7 @@ class App extends React.Component {
   };
 
   render() {
-    console.log(this.state.sResults);
+    // console.log(this.state.sResults);
     return (
    
       <div className="App">
@@ -54,7 +54,6 @@ class App extends React.Component {
             placeholder='Location...'
             />
             <Button type="submit" variant="primary">Explore!</Button>{' '}
-            {/* <Button type="submit" /> */}
             </InputGroup>
               {this.state.tError}
             </Form>
@@ -66,13 +65,19 @@ class App extends React.Component {
             !this.state.tError && this.state.sResults &&
              <CityInfo cityInfo={this.state.sResults}>        
             </CityInfo> 
-            // <h1>Name: {this.state.sResults.display_name}</h1>
             }
-            
+            {/* <Image
+                srcSet=     
+                  {`https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&center=${this.state.sResults.lat},${this.state.sResults.lon}`,
+                  `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&center=${this.state.sResults.lat},${this.state.sResults.lon}`},
+                  ../public/favicon.ico
+                  sizes="(max-width: 600px) 300px, 1200px"
+                  alt="Error"
+              />           */}
             </div>
-
           }
-        </main>
+          </main>
+          <footer>by Sue Young</footer>
       </div>
     
   )}

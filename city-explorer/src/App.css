@@ -14,8 +14,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* background-color: blueviolet; */
+  background-image: url("../public/world.jpg");
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +36,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+footer {
+  border-style: solid;
 }
