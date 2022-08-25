@@ -1,10 +1,5 @@
 # Documentation Directions
 
-## Here is the link to the client/server image put together with Brian Sward
-
-https://docs.google.com/drawings/d/1U0JtkqoJiJrxd2Lx-PPDbJmmXiIfqaVUl8qAngqOFCA/edit
-
-
 # Project Name
 
 **Author**: Sue Young
@@ -23,15 +18,15 @@ npm start
 ## Architecture
 ## Here is the link to the client/server image put together with Brian Sward
 
-https://docs.google.com/drawings/d/1U0JtkqoJiJrxd2Lx-PPDbJmmXiIfqaVUl8qAngqOFCA/edit
- -->
+![Client-Server Image](./public/wrrc.png "Client-Server Diagram")
 
 ## Change Log
 
-08-0=24-2022 9:00am - Application now has a functioning get/view lat lon from a city form input box and using the axios API -->
+08-24-2022 9:00am - Application now has a functioning get/view lat lon from a city form input box and using the axios API 
+08-24-2022 10:00pm - Functionally complete. Style issues. "lost" bootstrap styling when implementing new functionality
 
 ## Credit and Collaborations
-Cameron Walden (how to npm include axios and bootstrap), Audry Patterson (formation of the LociationIQ get API call).
+Cameron Walden (how to npm include axios, bootstrap and lots more), Audry Patterson (formation of the LociationIQ get API call).
 
 
 Time Estimates
@@ -43,6 +38,6 @@ Estimate of time needed to complete: 2 days
 
 Start time: 1:00 pm MST Tuesday
 
-Finish time: 9:00 am MST Wednesday
+Finish time: 10:00 pm MST Wednesday
 
-Actual time needed to complete: Still not complete. Image not rendering and Netlify throwing 404. 
+Actual time needed to complete: Still not complete, see style issues and netlify deploy
