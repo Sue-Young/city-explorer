@@ -1,7 +1,7 @@
 //mport logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-//import Image from 'react-bootstrap/Image';
+import Image from 'react-bootstrap/Image';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup'
@@ -61,19 +61,22 @@ class App extends React.Component {
         <main>
           {
             <div>
-            {
-            !this.state.tError && this.state.sResults &&
-             <CityInfo cityInfo={this.state.sResults}>        
-            </CityInfo> 
-            }
-            {/* <Image
-                srcSet=     
-                  {`https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&center=${this.state.sResults.lat},${this.state.sResults.lon}`,
-                  `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&center=${this.state.sResults.lat},${this.state.sResults.lon}`},
-                  ../public/favicon.ico
-                  sizes="(max-width: 600px) 300px, 1200px"
-                  alt="Error"
-              />           */}
+              {
+                !this.state.tError && this.state.sResults && (
+                <>
+                  <CityInfo cityInfo={this.state.sResults}>        
+                  </CityInfo> 
+                
+              
+                  <Image
+                    srcSet=     
+                      {`https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&center=${this.state.sResults.lat},${this.state.sResults.lon}`}
+                      sizes="(max-width: 600px) 300px, 1200px"
+                      alt="Error"
+                  />   
+                </>
+                )
+              }        
             </div>
           }
           </main>
